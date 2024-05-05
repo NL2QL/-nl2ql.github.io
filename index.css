@@ -1,0 +1,58 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.read-more-target,
+.read-more-trigger_opened {
+  display: none;
+}
+.read-more-state:checked ~ .read-more-wrap .read-more-target,
+.read-more-state:checked ~ .read-more-trigger_opened {
+  display: block;
+}
+.read-more-state:checked ~ .read-more-trigger_closed {
+  display: none;
+}
+.read-more-trigger_closed,
+.read-more-trigger_opened {
+  color: #374151;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active {
+  background-color: #E7E9EC;
+}
+
+.accordion:after {
+  /* content: '\002B'; */
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* if active, add shadow on panel and accordian */
+/* .active, .accordion:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+} */
