@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM2Code | KDD 2024</title>
+    <meta name="description" content="Schedule of talks and activities" />
+    <!-- Montserrat Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <!-- Connect CSS and JS Sheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav
+      class="sticky top-0 z-50 flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-white bg-gradient-to-r from-[#9B4DE9] via-[#4F8BDF] to-[#1BA5D9]"
+    >
+      <div>
+        <h1 class="text-2xl font-bold ml-4 max-w-[250px] md:max-w-none">
+          KDD 2024 LLM2Code
+        </h1>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="menu-button"
+        class="h-6 w-6 cursor-pointer md:hidden block"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+        <ul
+          class="pt-4 text-base text-[#E3E9FF] md:flex md:justify-between md:pt-0 font-semibold"
+        >
+          <li>
+            <a class="md:p-4 py-2 block text-white" href="index.html#program">Program</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-white" href="callforpapers.html"
+              >Call for Papers</a
+            >
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-white" href="topics.html"
+              >Topics</a
+            >
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-white" href="index.html#speakers"
+              >Speakers</a
+            >
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-white" href="index.html#organizers"
+              >Organizers</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="relative">
+
+      <section class="container mx-auto flex" id="outline">
+        <div class="m-auto w-full">
+          <h1 class="text-2xl font-bold text-black m-4 pt-6">
+            Call for <span class="text-[#8457C7]">Papers</span>
+          </h1>
+          <h1 class="text-lg font-bold text-black m-4 pt-6">
+            Submission Guidelines
+          </h1>
+          <div class="m-4">
+            <ul class="list-disc list-inside max-w-6xl text-gray-600">
+              <li class="mb-2">Submissions should follow the SIGKDD formatting requirements and will be evaluated using the SIGKDD Research Track evaluation criteria.</li>
+              <li class="mb-2">Preference will be given to papers that are reproducible, and authors are encouraged to share their data and code publicly whenever possible.</li>
+              <li class="mb-2">Long papers can be up to 6 pages, and short papers can be up to 3 pages, not including references.</li>
+              <li class="mb-2">All submissions must be in PDF format using the KDD main conference paper template <a href="#" target="_blank">(Template Link)</a></li>
+            </ul>
+            <p class="text-gray-600">Submissions will be managed via the CMT website.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto flex">
+        <div class="m-auto w-full">
+          <h1 class="text-lg font-bold text-black m-4 pt-6">
+            To Note
+          </h1>
+          <div class="flex justify-between flex-col md:flex-row text-gray-600 m-4">
+            <div class="md:w-1/2">
+              <p class="text-gray-600 w-full mb-2">For Open Problem Submissions:</p>
+              <ul class="list-disc list-inside max-w-2xl">
+                <li class="mb-2">We plan to accept a small number of high-quality manuscripts describing open problems in reasoning and planning with LLM for code development.</li>
+                <li class="mb-2">Such papers should provide a clear, detailed description and analysis of a new or open problem that poses a significant challenge to existing techniques.</li>
+              </ul>
+            </div>
+            <div class="md:w-1/2">
+              <p class="text-gray-600 w-full mb-2">For Demo Submissions:</p>
+              <ul class="list-disc list-inside max-w-2xl">
+                <li class="mb-2">Submissions for demonstrations showcasing innovative applications, prototypes, or tools related to the workshop theme are invited.</li>
+                <li class="mb-2">Demos should highlight practical implementations, user interfaces, or interactive experiences leveraging LLMs to address challenges in code generation, understanding, optimization, or any other aspect of the software development lifecycle.</li>
+                <li class="mb-2">Demo submissions will be limited to one page (excluding references).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto flex">
+        <div class="m-auto w-full">
+          <h1 class="text-lg font-bold text-black m-4 pt-6 text-center">
+            Key
+            <span class="text-[#8457C7]">Dates</span>
+          </h1>
+
+          <div class="m-4 pt-2">
+            <div class="flex justify-between mt-10 relative">
+              <div class="flex-1">
+                <div class="flex justify-center">
+                  <div class="w-4 h-4 bg-black rounded-full z-10"></div>
+                </div>
+                <p class="text-center mt-2 text-gray-500">May 28th, 2024</p>
+                <p class="text-center font-semibold">Paper/Demo Submission Deadline</p>
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-center">
+                  <div class="w-4 h-4 bg-black rounded-full z-10"></div>
+                </div>
+                <p class="text-center mt-2 text-gray-500">June 28th, 2024</p>
+                <p class="text-center font-semibold">Author Notification</p>
+                </div>
+              <div class="flex-1">
+                <div class="flex justify-center">
+                  <div class="w-4 h-4 bg-black rounded-full z-10"></div>
+                </div>
+                <p class="text-center mt-2 text-gray-500">July 27th, 2024</p>
+                <p class="text-center font-semibold">Camera Ready Deadline</p>
+              </div>
+              <!-- Grey line -->
+              <div class="absolute top-2 left-0 right-0 h-[4px] bg-gray-200 mt-[-2px] rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto flex mb-10" id="outline">
+        <div class="m-auto w-full">
+          <h1 class="text-lg font-bold text-black m-4 pt-6">
+            Review Process and Publication
+          </h1>
+          <div class="m-4">
+            <ul class="list-disc list-inside max-w-6xl text-gray-600">
+              <li class="mb-2">The review process is single-round and double-blind (submission files have to be anonymized).</li>
+              <li class="mb-2">Accepted papers will be presented as posters during the workshop and listed on the website.</li>
+              <li class="mb-2">Long papers can be up to 6 pages, and short papers can be up to 3 pages, not including references.</li>
+              <li class="mb-2">A small number of accepted papers will be selected to be presented as contributed talks.</a></li>
+            </ul>
+            <p class="text-gray-600">Note that all accepted papers, demos, etc., will not be included in the KDD proceeding.</p>
+          </div>
+        </div>
+      </section>
+
+    <!-- simple footer -->
+    <footer class="bg-gray-200 text-center py-4 text-gray-500 py-[50px]">
+      <p>&copy; 2024 KDD. All rights reserved.</p>
+      <p>
+        Designed and Developed by
+        <a
+          href="https://github.com/jolenechong"
+          ,
+          target="_blank"
+          class="underline"
+          >Jolene Chong</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
